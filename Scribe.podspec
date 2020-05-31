@@ -16,5 +16,5 @@ Framework used to share localization to a project
   s.swift_version = '5.0'
 
   s.source_files = 'Output/iOS/**/*{swift}'
-  s.resources = 'Output/iOS/**/*.{xib,storyboard,png,jpg,pdf,xcassets,imageset,lproj,strings,stringsdict}'
+  s.resources = 'Output/iOS/**/*.{xib,storyboard,png,jpg,pdf,xcassets,imageset,lproj}'
 end

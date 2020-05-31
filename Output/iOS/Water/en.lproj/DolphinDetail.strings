@@ -1,0 +1,6 @@
+// DolphinDetail.strings.strings
+// Generated using Cerberus — https://github.com/StashInvest/Cerberus
+
+// Singles
+"dolphin.detail.view_title" = "Product %s  %s  %s Detail";
+// Formats

@@ -29,7 +29,7 @@ public struct {{ module_name }}{{ submodule_name }}Strings {
     enum SubKeys: String {
     {% for subkey in subkeys %}    case {{ subkey.name|camelcase }}{% if subkey.isPascal %} = "{{ subkey }}"{% endif %}
     {% endfor %}}{% endif %}{% for single in copy %}
-    {% if single.value.parameters.count == nil or single.value.parameters.count == 0 %}static let {{ single.key|camelcase }}: String = localize(Keys.{{ single.key|camelcase }}.rawValue){% else %}static func {{ single.key|camelcase }}({% for parameter in single.value.parameters %}{% if not forloop.first %}, {% endif %}{{ parameter.name|camelcase }}: {{ parameter.type|parameterTypeiOS }}{% endfor %}) -> String {
+    {% if single.value.parameters.count == nil or single.value.parameters.count == 0 %}public static let {{ single.key|camelcase }}: String = localize(Keys.{{ single.key|camelcase }}.rawValue){% else %}public static func {{ single.key|camelcase }}({% for parameter in single.value.parameters %}{% if not forloop.first %}, {% endif %}{{ parameter.name|camelcase }}: {{ parameter.type|parameterTypeiOS }}{% endfor %}) -> String {
         let format: String = localize(Keys.{{ single.key|camelcase }}.rawValue)
         {% for parameter in single.value.parameters %}{% if parameter.type != "string" %}let {{ parameter.name|camelcase }}Result: String = localizeParameter(key: Keys.{{ single.key|camelcase }}, parameter: SubKeys.{{ parameter.name|camelcase }}, value: {{ parameter.name|camelcase }})
         {% endif %}{% endfor %}let result: String = String.localizedStringWithFormat(format, {% for parameter in single.value.parameters %}{% if not forloop.first %}, {% endif %}{{ parameter.name|camelcase }}{% if parameter.type != "string" %}Result{% endif %}{% endfor %})

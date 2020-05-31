@@ -17,5 +17,5 @@ public struct FishDetailStrings {
         case viewTitle = "fish.detail.view_title"
     }
     
-    static let viewTitle: String = localize(Keys.viewTitle.rawValue)
+    public static let viewTitle: String = localize(Keys.viewTitle.rawValue)
 }

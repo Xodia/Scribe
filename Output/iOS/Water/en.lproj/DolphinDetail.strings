@@ -2,5 +2,5 @@
 // Generated using Cerberus — https://github.com/StashInvest/Cerberus
 
 // Singles
-"dolphin.detail.view_title" = "Product %s  %s  %s Detail";
 // Formats
+"dolphin.detail.view_title" = "Product %1$@  %2$@  %3$@ Detail";

@@ -2,5 +2,5 @@
 // Generated using Cerberus — https://github.com/StashInvest/Cerberus
 
 // Singles
-"shark.detail.view_title" = "Detalle del producto    %s %s %s";
 // Formats
+"shark.detail.view_title" = "Detalle del producto    %1$@ %2$@ %3$@";

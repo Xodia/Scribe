@@ -3,5 +3,5 @@
 Generated using Cerberus — https://github.com/StashInvest/Cerberus
 -->
 <resources>
-    <string name="dolphin_detail_view_title">Détail du produit  %s %s %s</string>
+    <string name="dolphin_detail_view_title">Détail du produit  %1$s %2$s %3$s</string>
 </resources>

@@ -3,5 +3,5 @@
 Generated using Cerberus — https://github.com/StashInvest/Cerberus
 -->
 <resources>
-    <string name="shark_detail_view_title">Detalle del producto    %s %s %s</string>
+    <string name="shark_detail_view_title">Detalle del producto    %1$s %2$s %3$s</string>
 </resources>
